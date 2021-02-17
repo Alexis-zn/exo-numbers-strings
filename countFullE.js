@@ -16,10 +16,15 @@ Et j'ai deux fois vainqueur traversé l'Achéron ;
 Modulant tour à tour sur la lyre d'Orphée
 Les soupirs de la sainte et les cris de la fée.`
 
+text = text.toLowerCase()
+console.log(text)
+
 let nbe = 0
 
-for(i=0; i < text.length; i++) 
-  if(text[i] === 'e') {
+for(let i =0; i < text.length ; i++) {
+  if(text[i] === 'e' || text[i] === 'è' || text[i] === 'ê' || text[i] === 'é' ) {
     nbe++
-  } 
-  console.log(`There is ${nbe} times the letter 'e' in this text`)
+  }
+}
+
+console.log(`nb e: ${nbe}`)
